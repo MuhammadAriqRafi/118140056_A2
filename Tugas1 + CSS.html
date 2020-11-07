@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas CSS Pemweb</title>
+</head>
+<style>
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header, footer, .content-wrapper{
+        width: 784px;
+    }
+
+    header{
+        height: 200px;
+        background: url('https://assets-a2.kompasiana.com/items/album/2018/11/03/programmer-5bdd6a0543322f4afc64ebe5.jpg?t=o&v=760');
+        background-size: cover;
+    }
+
+    .content-wrapper{
+        display: flex;
+        height: calc(100vh - 300px);
+    }
+
+    nav{
+        width: 200px;
+        height: 100%;
+        background-color: yellow;
+    }
+
+    nav ul{
+        padding: 1em 2em;
+        list-style: none;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        display: block;
+        padding: .5em;
+        color: black;
+    }
+
+    section{
+        width: 584px;
+        height: 100%;
+        background-color: rgb(231, 114, 114);
+        padding: 1.5em 2.5em;
+    }
+
+
+    section h1{
+        margin-bottom: 1rem;
+    }
+
+    section article{
+        margin-bottom: 1.5rem;
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+        padding-left: 3em;
+        height: 100px;
+        background-color: rgb(159, 120, 193);
+        font-weight: 700;
+    }
+
+</style>
+<body>
+
+    <header></header>
+
+    <div class="content-wrapper">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+ 
+        <section>
+            <h1>Articel</h1>
+            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eum minima quae mollitia earum voluptates, nulla animi quia perferendis vitae.</article>
+
+            <h1>Form</h1>
+            <form>
+                <label>Name:</label>
+                <input type="text" name="name">
+                <br>
+                <label>Gender:</label>
+                <input type="radio" name="nama" value="man">Man
+                <input type="radio" name="nama" value="woman">Woman
+                <br>
+                <label>Address:</label>
+                <input type="text" name="address">
+                <br>
+                <label>Country:</label>
+                <select name="country">
+                    <option value="indonesia">Indonesia</option>
+                    <option value="indonesia">Saudi Arabia</option>
+                </select>
+                <br>
+                <label>Email:</label>
+                <input type="text" name="email">
+                <br>
+                <label>Photo:</label>
+                <input type="text" name="photo">
+                <input type="file" name="photo">
+                <br>
+                <label>Comment:</label>
+                <textarea name="comment" cols="30" rows="10"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>118140056 Muhammad Ariq Rafi</footer>
+
+</body>
+</html>
